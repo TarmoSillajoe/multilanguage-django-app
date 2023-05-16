@@ -1,0 +1,9 @@
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+{% get_available_languages as LANGUAGES %}
+{% get_current_language_bidi as LANGUAGE_BIDI %}
+<h1>{{ LANGUAGE_CODE }}</h1>
+<h1>{% translate "WelcomeHeading" %}</h1>
+<p>{% translate "WelcomeParagraph" %}</p>
+<h2>{% translate "InstructionsHeader" %}</h2>
+<p>{% translate "InstrcutionsParagraph" %}</p>
