@@ -14,17 +14,18 @@ def home(request):
         "title": title,
     }
 
+    language_chosen = request.COOKIES.get(
+        settings.LANGUAGE_COOKIE_NAME, settings.LANGUAGE_CODE
+    )
+    if language_chosen:
+        translation.activate(language_chosen)
     response = render(
         request,
         "home.html",
         context=context,
     )
-    lang_request = request.COOKIES.get(settings.LANGUAGE_COOKIE_NAME)
-    if lang_request and translation.get_language() != lang_request:
-        user_language = lang_request
-        translation.activate(user_language)
-        response.set_cookie(settings.LANGUAGE_COOKIE_NAME, user_language)
 
+    response.set_cookie(settings.LANGUAGE_COOKIE_NAME, language_chosen)
     return response
 
 
