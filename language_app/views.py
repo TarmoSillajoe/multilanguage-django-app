@@ -19,9 +19,15 @@ def home(request):
         "home.html",
         context=context,
     )
-    if request.COOKIES.get(settings.LANGUAGE_COOKIE_NAME):
-        user_language = request.COOKIES[settings.LANGUAGE_COOKIE_NAME]
+    lang_request = request.COOKIES.get(settings.LANGUAGE_COOKIE_NAME)
+    if lang_request and translation.get_language() != lang_request:
+        user_language = lang_request
         translation.activate(user_language)
         response.set_cookie(settings.LANGUAGE_COOKIE_NAME, user_language)
 
     return response
+
+
+def page(request):
+    context = {"message": gettext("Message")}
+    return render(request, "page.html", context=context)

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-03 21:10+0300\n"
+"POT-Creation-Date: 2023-06-03 05:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,11 +34,15 @@ msgstr "Русский"
 
 #: internationalproject/settings.py:126
 msgid "English"
-msgstr ""
+msgstr "англиискии"
 
-#: language_app/views.py:9
+#: language_app/views.py:11
 msgid "Homepage"
 msgstr "главная страница"
+
+#: language_app/views.py:31 templates/page.html:15
+msgid "Message"
+msgstr "сообшение"
 
 #: templates/home.html:38 templates/plain.html:6
 msgid "WelcomeHeading"
