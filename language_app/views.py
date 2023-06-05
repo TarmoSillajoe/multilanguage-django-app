@@ -32,3 +32,11 @@ def home(request):
 def page(request):
     context = {"message": gettext("Message")}
     return render(request, "page.html", context=context)
+
+
+def myhtmx(request):
+    return render(
+        request,
+        template_name="myhtmx.html",
+        context={},
+    )

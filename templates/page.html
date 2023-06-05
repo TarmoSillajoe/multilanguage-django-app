@@ -1,19 +1,15 @@
+{% extends "base.html" %}
 {% load i18n %}
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible"
-        content="IE=edge">
-    <meta name="{{ title }}"
-        content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
-</head>
-
-<body>
-    <a href="{% url 'home' %}">back to homepage</a>
-    <h1>{% translate "Message" %}</h1>
-</body>
-
-</html>
+{% load static %}
+{% block title %}
+another page
+{% endblock title %}
+{% block content %}
+<a href="{% url 'home' %}">back to homepage</a>
+<h1>Your url path is "{{ request.path }}"</h1>
+<h1>{% translate "Message" %}</h1>
+<button hx-get="{% url 'myhtmx' %}"
+    hx-target="#toggleDiv">click to get the
+    text</button>
+<div id="toggleDiv"></div>
+{% endblock content %}

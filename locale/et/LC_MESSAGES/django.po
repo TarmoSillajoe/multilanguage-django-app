@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-03 05:36+0000\n"
+"POT-Creation-Date: 2023-06-04 04:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,26 +33,26 @@ msgstr "vene"
 msgid "English"
 msgstr "inglise"
 
-#: language_app/views.py:11
+#: language_app/views.py:11 templates/home.html:4
 msgid "Homepage"
 msgstr "esileht"
 
-#: language_app/views.py:31 templates/page.html:15
+#: language_app/views.py:33 templates/page.html:8
 msgid "Message"
 msgstr "teade"
 
-#: templates/home.html:38 templates/plain.html:6
+#: templates/home.html:31 templates/plain.html:6
 msgid "WelcomeHeading"
 msgstr "Tere tulemast!"
 
-#: templates/home.html:39 templates/plain.html:7
+#: templates/home.html:32 templates/plain.html:7
 msgid "WelcomeParagraph"
 msgstr "Tere tulemast meie mega-huvitavale kodulehele. Oled õiges kohas."
 
-#: templates/home.html:40 templates/plain.html:8
+#: templates/home.html:33 templates/plain.html:8
 msgid "InstructionsHeader"
 msgstr "Juhend"
 
-#: templates/home.html:41 templates/plain.html:9
+#: templates/home.html:34 templates/plain.html:9
 msgid "InstrcutionsParagraph"
 msgstr "Siit leiad lühikese õpetuse, kuidas teha ..."

@@ -1,0 +1,8 @@
+nav {border-bottom: solid 1px black;}
+
+.crumbs ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.crumb {display: inline-block;}
