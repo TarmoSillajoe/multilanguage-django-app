@@ -7,29 +7,9 @@
 {% block content %}
 
 <h1>Your url path is "{{ request.path }}"</h1>
-{% get_current_language as LANGUAGE_CODE %}
 <a href="{% url 'page' %}">to another page</a>
-<h1>{{ LANGUAGE_CODE }}</h1>
-<form action="{% url 'set_language' %}"
-    method="post">
-    {% csrf_token %}
-    <input name="next"
-        type="hidden"
-        value="{{ request.path }}">
-    <select name="language">
-        {% get_current_language as LANGUAGE_CODE %}
-        {% get_available_languages as LANGUAGES %}
-        {% get_language_info_list for LANGUAGES as languages %}
-        {% for language in languages %}
-        <option value="{{ language.code }}"
-            {% if language.code == LANGUAGE_CODE %}selected{% endif %}>
-            {{ language.name_local }} ({{ language.code }})
-        </option>
-        {% endfor %}
-    </select>
-    <input type="submit"
-        value="Go">
-</form>
+
+
 <h1>{% translate "WelcomeHeading" %}</h1>
 <p>{% translate "WelcomeParagraph" %}</p>
 <h2>{% translate "InstructionsHeader" %}</h2>

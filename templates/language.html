@@ -2,13 +2,12 @@
 {% load static %}
 
 
-{% get_current_language as LANGUAGE_CODE %}
 <form action="{% url 'set_language' %}"
     method="post">
     {% csrf_token %}
     <input name="next"
         type="hidden"
-        value="/">
+        value="{{ request.path }}">
     <select name="language">
         {% get_current_language as LANGUAGE_CODE %}
         {% get_available_languages as LANGUAGES %}

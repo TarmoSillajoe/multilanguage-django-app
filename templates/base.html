@@ -1,31 +1,31 @@
 {% load i18n %}
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible"
-        content="IE=edge">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}{% endblock title %}</title>
-    <link rel="stylesheet"
-        href="{% static 'style.css' %}">
-</head>
-<script src="{% static 'index-bundle.js' %}"></script>
-
-<body>
-    <nav class="crumbs">
-        <ol class="">
-            <li class="crumb"><a href="{% url 'home' %}">home</a></li>
-            <li class="crumb"><a href="{% url 'page' %}">page</a></li>
-        </ol>
-    </nav>
-    {% block content %}
-
-    {% endblock content %}
-</body>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            {% block title %}
+            {% endblock title %}
+        </title>
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+    </head>
+    <script src="{% static 'index-bundle.js' %}"></script>
+    <body>
+        <nav class="crumbs">
+            <ol class="">
+                <li class="crumb">
+                    <a href="{% url 'home' %}">home</a>
+                </li>
+                <li class="crumb">
+                    <a href="{% url 'page' %}">page</a>
+                </li>
+            </ol>
+            {% include 'language.html' %}
+        </nav>
+        {% block content %}
+        {% endblock content %}
+    </body>
 </html>

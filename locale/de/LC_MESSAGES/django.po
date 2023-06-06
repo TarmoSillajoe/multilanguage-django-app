@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-04 04:34+0000\n"
+"POT-Creation-Date: 2023-06-06 18:56+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,43 +18,43 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: internationalproject/settings.py:123
+#: internationalproject/settings.py:131
 msgid "German"
 msgstr "Deutsch"
 
-#: internationalproject/settings.py:124
+#: internationalproject/settings.py:132
 msgid "Estonian"
 msgstr "Estnisch"
 
-#: internationalproject/settings.py:125
+#: internationalproject/settings.py:133
 msgid "Russian"
 msgstr "Russisch"
 
-#: internationalproject/settings.py:126
+#: internationalproject/settings.py:134
 msgid "English"
 msgstr "Englisch"
 
-#: language_app/views.py:11 templates/home.html:4
+#: language_app/views.py:27 language_app/views.py:41 templates/home.html:5
 msgid "Homepage"
 msgstr "Startseite"
 
-#: language_app/views.py:33 templates/page.html:8
+#: language_app/views.py:64 templates/page.html:10
 msgid "Message"
 msgstr "Meldung"
 
-#: templates/home.html:31 templates/plain.html:6
+#: templates/home.html:13 templates/plain.html:6
 msgid "WelcomeHeading"
 msgstr "Willkommen!"
 
-#: templates/home.html:32 templates/plain.html:7
+#: templates/home.html:14 templates/plain.html:7
 msgid "WelcomeParagraph"
 msgstr ""
 "Willkommen auf unsere Seite. Du bist an die richtige Stelle angekommen."
 
-#: templates/home.html:33 templates/plain.html:8
+#: templates/home.html:15 templates/plain.html:8
 msgid "InstructionsHeader"
 msgstr "Anleitung"
 
-#: templates/home.html:34 templates/plain.html:9
+#: templates/home.html:16 templates/plain.html:9
 msgid "InstrcutionsParagraph"
 msgstr "Hier findest Du kleine Anleitung für ..."
